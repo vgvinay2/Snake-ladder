@@ -1,10 +1,10 @@
 
 #### Solution 1
-[Snake Ladder Game](https://github.com/vgvinay2/Assignment/blob/master/lib/snake_ladder.rb)
+[Snake Ladder Game](https://github.com/vgvinay2/Snake-ladder/blob/master/lib/snake_ladder.rb)
  To run this game download and bundle (to run Rspec)
  To run snake game 
  ```console
- cd Assignment 
+ cd Snake-ladder 
  ruby lib/snake_ladder.rb
  
  It will ask Enter players name 
@@ -28,7 +28,18 @@
 ```
 
 #### Solution 2
-[Distribution array](https://github.com/vgvinay2/Assignment/blob/master/lib/breakdown_array_item.rb)
+[Distribution array](https://github.com/vgvinay2/
+
+
+
+
+
+
+
+
+
+
+gnment/blob/master/lib/breakdown_array_item.rb)
 To run breadkdown array
 ```console
  ruby lib/breakdown_array_item.rb 
