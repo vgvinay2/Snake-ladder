@@ -1,3 +1,22 @@
+#we want to build a cache of items and that this cache can only hold a fixed number of things. 
+#This begs the question: what happens when the cache is full and we want to insert an item? 
+#A common way to answer this question is with the Least Recently Used (LRU) eviction policy. 
+#Basically, it means that we remove (i.e. evict) the least recently used item in the cache to make room for the new item.
+
+#The question is this: how do we implement an efficient LRU cache? The cache has to be able to 
+#do a couple of things. First, we must be able to insert things into it with keys associated with them. 
+#Second, we should be able to get an item using its key.
+
+#This is an incredibly common interview question and one that is still asked in initial rounds. 
+#It requires the combination of a couple of concepts to get right. The LRU cache is most often 
+#implemented as a hash table and a doubly linked list (you can also use a splay tree, but that’s less common). 
+#Here’s how it works. The hash table’s keys consist of the keys for our cache and values are actually 
+#nodes within the doubly linked list. We always keep track of the head and tail of this list. 
+#When we want to get a value out this cache, we look for that key in the hash table and return the associated node 
+#from the doubly linked list. In addition, we move that node from wherever it is in the list to the very back of the list. 
+#This makes sure that the least recently used item is always at the very front of the list. So, 
+#when we want to insert a new item into our cache and the cache is full, we simply pop off an item from the front of the list.
+
 class Node
   attr_accessor :value, :next_node, :prev_node 
 
