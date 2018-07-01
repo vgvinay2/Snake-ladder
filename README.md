@@ -1,4 +1,4 @@
-
+https://academind.com/learn/react/snippets/image-upload/
 #### Solution 1
 [Snake Ladder Game](https://github.com/vgvinay2/Snake-ladder/blob/master/lib/snake_ladder.rb)
  To run this game download and bundle (to run Rspec)
